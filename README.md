@@ -4,7 +4,7 @@
 To develop a Django application to store and retrieve data from a database using Object Relational Mapping(ORM).
 
 ## Entity Relationship Diagram:
-![entity diagram](https://user-images.githubusercontent.com/122762773/230107024-e6dd7279-b88e-466f-a1c3-a9d1255116b5.png)
+
 
 
 ## DESIGN STEPS:
@@ -41,7 +41,7 @@ class StudentAdmin(admin.ModelAdmin):
 ## OUTPUT:
 
 
-![django](https://user-images.githubusercontent.com/122762773/230101993-ffd6f7f0-efb3-40f6-bda9-3701e0171699.png)
+
 
 
 ## RESULT:
