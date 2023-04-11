@@ -6,6 +6,7 @@ To develop a Django application to store and retrieve data from a database using
 ## Entity Relationship Diagram:
 
 
+![entity diragram](https://user-images.githubusercontent.com/122762773/231185475-22ae2400-8385-4c43-80db-22b003a1222b.png)
 
 ## DESIGN STEPS:
 
@@ -28,19 +29,23 @@ from django.db import models
 from django.contrib import admin
 
 class Student (models.Model):
-    referencenumber=models.CharField(max_length=20,help_text="reference number")
+    referencenumber=models.CharField(primary_key=True,max_length=20,help_text="reference number")
     name=models.CharField(max_length=100)
     age=models.IntegerField()
     email=models.EmailField()
+    department=models.CharField(max_length=100)
 
 
 class StudentAdmin(admin.ModelAdmin):
-    list_display=('referencenumber','name','age','email')
+    list_display=('referencenumber','name','age','email','department')
+  
+
 ```
 
 ## OUTPUT:
 
 
+![django orm app](https://user-images.githubusercontent.com/122762773/231179332-4b5d59bb-cd38-421d-81e4-6eb06937da67.png)
 
 
 
